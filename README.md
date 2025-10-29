@@ -80,9 +80,13 @@ Authorization: Bearer <your_jwt_token>
 📬 API Documentation (Postman Collection)
 1️⃣ Auth APIs
 Method	Endpoint	Description
+
 POST	/api/auth/register/candidate	Register new candidate
+
 POST	/api/auth/register/recruiter	Register new recruiter
+
 POST	/api/auth/login	Login and get JWT token
+
 Example: Register Candidate
 {
   "name": "John Doe",
@@ -96,15 +100,23 @@ Example: Register Candidate
 2️⃣ Candidate APIs
 Method	Endpoint	Description
 GET	/api/candidates/profile	View candidate profile
+
 PUT	/api/candidates/profile	Update candidate profile
+
 3️⃣ Job APIs
 Method	Endpoint	Description
 GET	/api/jobs	List all jobs (public)
+
 GET	/api/jobs/{id}	View job details
+
 GET	/api/jobs/search?skill=Java&location=Bangalore	Search jobs
+
 POST	/api/jobs	Post new job (Recruiter only)
+
 GET	/api/jobs/mine	View jobs posted by recruiter
+
 POST	/api/jobs/{id}/apply	Apply to a job (Candidate only)
+
 GET	/api/jobs/applications/{jobId}	View applicants for a specific job (Recruiter only)
 💡 Example Search
 
